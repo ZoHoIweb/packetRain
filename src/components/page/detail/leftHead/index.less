@@ -1,0 +1,142 @@
+.skuWrapper {
+  width: 512px;
+  //height: 560px;
+  margin-top: 20px;
+  padding-left: 12px;
+  -ms-overflow-style:none; // ff隐藏滚动条
+  //overflow-y: scroll;
+  //display: flex;
+  //justify-content: space-between;
+  position: relative;
+  >img{
+    width: 512px;
+    height: 512px;
+  }
+  >p{
+    height: 100px;
+    line-height: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    overflow-y: hidden;
+    margin-top: 20px;
+    color: #04436E;
+  }
+  >hr{
+    background: #E5E5E5;
+    width: 100%;
+    border-top: 1px dashed #E5E5E5;
+    margin-top: 20px;
+  }
+  .bottomLinear{
+    width: 512px;
+    position: absolute;
+    left: 10px;
+    top: 852px;
+  }
+  .selectWrapper{
+    width: 100%;
+    height: 100px;
+    >p{
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      font-size: 24px;
+    }
+    .selectContent{
+      -ms-overflow-style:none; // ff隐藏滚动条
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 100%;
+      height: 40px;
+      margin-top: 10px;
+      .item{
+        width: 94px;
+        height: 36px;
+        border-radius: 36px;
+        line-height: 36px;
+        text-align: center;
+        font-size: 20px;
+        display: inline-block;
+      }
+
+    }
+    .selectContent::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+  .skuRow.common {
+    height: 150px;
+  }
+  .skuRow.withImage {
+    height: 139px;
+  }
+}
+.skuWrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+.footer{
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //margin-top: 30px;
+  .footerLeft {
+    width: 280px;
+    position: relative;
+    .price{
+      margin-top: 120px;
+      display: block;
+      color: #04436E;
+      font-size: 50px;
+      font-weight: bold;
+      >span{
+        color: #000000;
+        font-size: 28px;
+      }
+    }
+    >img{
+      position: absolute;
+      left: 150px;
+      top: 70px;
+      width: 176px;
+      height: 86px;
+    }
+
+  }
+  .code {
+    position: relative;
+    width: 136px;
+    height: 148px;
+    //padding: 53px 7px 12px 7px;
+    //background: #E3E3E3;
+    border-radius: 3px;
+    >img{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 148px;
+      height: 230px;
+    }
+    canvas {
+      width: 128px!important;
+      height: 128px!important;
+      position: absolute;
+      left: 12px;
+      top: 66px;
+    }
+    p {
+      height: 21px;
+      color: #E3E3E3;
+      //margin-top: 5px;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+}
+
+

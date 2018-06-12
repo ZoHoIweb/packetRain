@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>红包雨</title>
+  <link rel="stylesheet" href="./swiper.min.css">
+  <script type="text/javascript" src="/mock.min.js"></script>
+</head>
+<body>
+<div id="root">
+
+</div>
+
+<script type="text/javascript" src="./swiper.min.js"></script> <!--此乃swiper4-->
+<script>
+
+  // const IP = 'https://retail.ews.m.jaeapp.com';
+//   const IP = '//192.168.1.105:7001';
+  const IP = 'https://frontend.ews.m.jaeapp.com';
+  window.CFG = {
+//    token: 'e4257e0206ca815f17341bb30d6b2b30',
+//     token: 'sinxia-token',
+//     token: '',
+    company: '盛夏科技',
+    api: {
+      xuanshi: {
+       // getDetails: IP + '/front/classification/goods/withN/list',
+        getDetails: 'mock.getStaticVideoPicSources',
+      },
+    }
+  };
+
+</script>
+</body>
+</html>

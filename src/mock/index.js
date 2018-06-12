@@ -1,0 +1,2 @@
+import './postComPic';
+import './getStaticVideoPicSources';

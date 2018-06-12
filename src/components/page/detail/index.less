@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  .left {
+    flex: 1 1 550px;
+    padding: 25px 18px 25px 20px;
+    //box-shadow: 1px 0 10px black;
+    //border-right: 1px solid grey;
+  }
+  .right {
+    flex: 1 1 464px;
+    //border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    //background: #cccccc;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    overflow-y: scroll;
+    -ms-overflow-style:none; // ff隐藏滚动条
+    img {
+      width: calc(~'100% - 3px');
+      float: right;
+    }
+  }
+}
+
+.imgTitle{
+  position: absolute;
+  left: 340px;
+  top: -200px;
+  width: 315px;
+  height: 176px;
+}
+.noRemark{
+  position: absolute;
+  left: 30px;
+  top: 932px;
+  width: 315px;
+  font-size: 30px;
+  height: 50px;
+}
+
